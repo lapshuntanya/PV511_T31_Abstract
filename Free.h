@@ -11,12 +11,13 @@ public:
     Free();
     Free(string name, string company);
 
-    virtual void print() override;
-    virtual bool check() override;
-    virtual void save(ofstream&file) override;
-    virtual void load(ifstream&file) override;
-    virtual string type() override;
+    virtual void print()const override;
+    virtual bool check() const override;
+    virtual void save(ofstream& file)const override;
+    virtual void load(ifstream& file) override;
+    virtual string type()const override;
 };
+
 
 
 #endif //PV511_T31_ABSTRACT_FREE_H

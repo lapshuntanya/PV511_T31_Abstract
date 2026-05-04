@@ -21,11 +21,11 @@ public:
     string getName()const;
     string getCompany()const;
 
-    virtual void print() = 0;
-    virtual bool check() = 0;
-    virtual void save(ofstream&file) = 0;
+    virtual void print()const = 0;
+    virtual bool check()const = 0;
+    virtual void save(ofstream&file)const = 0;
     virtual void load(ifstream&file) = 0;
-    virtual string type() = 0;
+    virtual string type()const = 0;
 };
 
 

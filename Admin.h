@@ -13,6 +13,9 @@
 class Admin {
 
     vector<Soft* > admin; // STL container vector
+
+    void savetoFile()const;
+    void loadfromFile();
 public:
     Admin();
     ~Admin();

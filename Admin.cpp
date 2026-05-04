@@ -5,7 +5,17 @@
 #include "Admin.h"
 
 
-Admin::Admin() {
+void Admin::savetoFile() const {
+    ofstream file("info-soft.txt");
+    if (file.is_open()) {
+        for (auto item:admin)
+            item->save(file);
+
+        file.close();
+    }
+}
+
+void Admin::loadfromFile() {
     ifstream file("info-soft.txt");
     if (file.is_open()) {
 
@@ -31,14 +41,12 @@ Admin::Admin() {
     }
 }
 
-Admin::~Admin() {
-    ofstream file("info-soft.txt");
-    if (file.is_open()) {
-        for (auto item:admin)
-            item->save(file);
+Admin::Admin() {
+    loadfromFile();
+}
 
-        file.close();
-    }
+Admin::~Admin() {
+    savetoFile();
 //-------------------------------------
 
     for (auto item:admin)

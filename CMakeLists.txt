@@ -7,4 +7,6 @@ add_executable(PV511_T31_Abstract main.cpp
         Date.h
         Date.cpp
         Soft.cpp
-        Soft.h)
+        Soft.h
+        Free.cpp
+        Free.h)

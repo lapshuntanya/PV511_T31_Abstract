@@ -9,4 +9,6 @@ add_executable(PV511_T31_Abstract main.cpp
         Soft.cpp
         Soft.h
         Free.cpp
-        Free.h)
+        Free.h
+        Shareware.cpp
+        Shareware.h)

@@ -7,11 +7,11 @@ int main() {
 
    // Soft a;
 
-    Free b("paint", "Microsoft");
-    b.print();
-
-    Shareware d("VS", "Microsoft", Date(), 365);
-    d.print();
+    // Free b("paint", "Microsoft");
+    // b.print();
+    //
+    // Shareware d("VS", "Microsoft", Date(), 365);
+    // d.print();
 
 
     return 0;

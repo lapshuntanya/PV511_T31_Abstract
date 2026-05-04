@@ -11,4 +11,6 @@ add_executable(PV511_T31_Abstract main.cpp
         Free.cpp
         Free.h
         Shareware.cpp
-        Shareware.h)
+        Shareware.h
+        Admin.cpp
+        Admin.h)
